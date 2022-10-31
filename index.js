@@ -17,11 +17,7 @@ const RoleName = config.Discord.Notification.RoleName;
 const Notification = config.Discord.Notification.Notification;
 
 if(Notification) {
-    if(RoleName) {
-        console.log(chalk.blue('[INFO]  : ') + chalk.white('配信通知が現在許可されています。配信が開始、又は終了したときに"@' + RoleName + '"でメンションされます'));
-    } else {
-        console.log(chalk.blue('[INFO]  : ') + chalk.white('配信通知が現在許可されています。配信が開始、又は終了したら"@here"でメンションされます'));
-    }
+    console.log(chalk.blue('[INFO]  : ') + chalk.white('配信通知が現在許可されています。配信が開始、又は終了したら"@here"でメンションされます'));
 } else {
     console.log(chalk.blue('[INFO]  : ') + chalk.white('配信通知が現在許可されていません。配信が開始、又は終了したらEmbedのみ送信されます'));
 }
