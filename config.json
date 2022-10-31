@@ -1,0 +1,9 @@
+{
+  "UserID": "",
+  "Discord": {
+    "WebHook_URL": "",
+    "Notification": {
+      "Notification": true
+    }
+  }
+}
